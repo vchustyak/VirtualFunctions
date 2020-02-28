@@ -28,4 +28,5 @@ bool BaseBill::DecreaseBalanse(int balanse)
 	}
 	this->balanse-=balanse;
 	std::cout<<"You have enough money\n";
+	return true;
 }

@@ -8,11 +8,10 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	BaseBill bill(1000
-		, std::string("1234 3456 1234 56768"));
-
-	bill.DecreaseBalanse(500);
-	bill.DecreaseBalanse(600);
+	AdvansedBill bill("3456 1234 7890 3456", 1000, 500);
+	BaseBill* pBill = &bill;
+	pBill->DecreaseBalanse(500);
+	pBill->DecreaseBalanse(600);
 	return 0;
 }
 

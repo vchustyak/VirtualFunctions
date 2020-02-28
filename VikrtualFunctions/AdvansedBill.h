@@ -10,7 +10,7 @@ public:
 	AdvansedBill(void);
 	AdvansedBill(std::string number, int balanse,
 		int suma);
-	bool DecreaseBalance(int balanse)
+	bool DecreaseBalanse(int balanse) override
 	{
 		std::cout<<"AdvansedBill::DecreaseBalanse\n";
 		if (balanse>this->balanse+suma)
