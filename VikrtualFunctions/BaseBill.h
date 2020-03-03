@@ -10,6 +10,7 @@ public:
 	BaseBill(int balanse,std::string number);
 	void AddBalanse(int balanse);
 	virtual bool DecreaseBalanse(int balanse);
-	
+	std::string GetNumber(){return number;};
+	int GetBalanse(){return balanse;}
 };
 
